@@ -3,7 +3,7 @@ import pickle
 
 # Load the trained model
 with open("trained_model.pkl", "rb") as f:
-    model = pickle.load(f)
+    pickle.dump(model, f)
 
 # Set up the Streamlit app
 st.title("Student Pass Prediction App")
